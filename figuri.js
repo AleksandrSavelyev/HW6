@@ -141,10 +141,12 @@ function emptyHourglass (num) {
             for (let j = 0; j < 2 * i + 1; j++) {
                 if(j == 2*i) {
                     star += " *";
-                } else if (j == 1){
+                } else if (j == 0){
+                    star += " *";
+                } else if (i == h - 1){
                     star += " *";
                 } else {
-                    star += " -";
+                    star += '  '
                 }
             }
 
@@ -168,7 +170,15 @@ function emptyHourglass (num) {
                 space += "  ";
             }
             for (let j = 0; j < 2 * i + 1; j++) {
-                star += " *";
+                if(j == 2*i) {
+                    star += " *";
+                } else if (j == 0){
+                    star += " *";
+                } else if (i == h - 1){
+                    star += " *";
+                } else {
+                    star += '  '
+                }
             }
 
             console.log(space + star);
