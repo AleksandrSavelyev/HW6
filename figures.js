@@ -11,7 +11,7 @@ function square (num) {
     }
 }
 
-// square(6);
+square(6);
 
 function emptuSquare (num) {
     let star = '';
@@ -34,7 +34,7 @@ function emptuSquare (num) {
     }
 }
 
-// emptuSquare(10);
+emptuSquare(10);
 
 function triangle (num) {
     let star = '';
@@ -70,7 +70,8 @@ function emptyTriangle(num) {
         star = '';
     }
 }
-// emptyTriangle(10);
+
+emptyTriangle(10);
 
 function hourglass (num) {
     let h = num / 2;
@@ -122,7 +123,8 @@ function hourglass (num) {
     createTriangle(h);
     console.log(" ");
 }
-// hourglass(6); 
+
+hourglass(6); 
 
 function emptyHourglass (num) {
     let h = num / 2;
@@ -190,4 +192,4 @@ function emptyHourglass (num) {
     console.log(" ");
 }
 
-emptyHourglass(10);
+emptyHourglass(6);
